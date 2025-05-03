@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>DOM Manipulation </h1>
+                <p>Learn how to manipulate the DOM with JavaScript</p>
+                <button id="theme-toggle">Switch Theme</button>
+            </div>
+        </section>
+        
+        <section class="examples">
+            <div class="example-card">
+                <h2>1. Selecting Elements</h2>
+                <p>Use these methods to select DOM elements:</p>
+                <ul>
+                    <li><code>document.getElementById()</code> - Select by ID</li>
+                    <li><code>document.querySelector()</code> - CSS selector</li>
+                    <li><code>document.querySelectorAll()</code> - Multiple elements</li>
+                </ul>
+                <div class="demo-area" id="select-demo">
+                    <p>Try selecting me with JavaScript!</p>
+                </div>
+                <button id="select-demo-btn">Select the Paragraph</button>
+            </div>
+            
+            <div class="example-card">
+                <h2>2. Modifying Content</h2>
+                <p>Change element content with:</p>
+                <ul>
+                    <li><code>element.textContent</code> - Plain text</li>
+                    <li><code>element.innerHTML</code> - HTML content</li>
+                </ul>
+                <div class="demo-area" id="content-demo">
+                    <p>Original content</p>
+                </div>
+                <button id="content-demo-btn">Change Content</button>
+            </div>
+            
+            <div class="example-card">
+                <h2>3. Event Listeners</h2>
+                <p>Respond to user interactions:</p>
+                <ul>
+                    <li><code>element.addEventListener()</code> - Add event handlers</li>
+                    <li><code>click</code>, <code>mouseover</code>, <code>keydown</code> - Common events</li>
+                </ul>
+                <div class="demo-area" id="event-demo">
+                    <p>Hover or click me!</p>
+                </div>
+            </div>
+            
+            <div class="example-card">
+                <h2>4. Creating/Removing Elements</h2>
+                <p>Dynamically modify the DOM:</p>
+                <ul>
+                    <li><code>document.createElement()</code> - Make new elements</li>
+                    <li><code>element.appendChild()</code> - Add to DOM</li>
+                    <li><code>element.remove()</code> - Remove elements</li>
+                </ul>
+                <div class="demo-area" id="element-demo">
+                    <p>Existing element</p>
+                </div>
+                <button id="add-element-btn">Add New Element</button>
+                <button id="remove-element-btn">Remove Last Element</button>
+            </div>
+            
+            <div class="example-card">
+                <h2>5. Styling Elements</h2>
+                <p>Change styles dynamically:</p>
+                <ul>
+                    <li><code>element.style.property</code> - Inline styles</li>
+                    <li><code>element.classList</code> - Add/remove CSS classes</li>
+                </ul>
+                <div class="demo-area" id="style-demo">
+                    <p>Watch my style change!</p>
+                </div>
+                <button id="style-demo-btn">Change Style</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 D.K.KREATES. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

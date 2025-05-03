@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --primary: #3a86ff;
+    --secondary: #ff006e;
+    --text: #333;
+    --background: #f5f5f5;
+    --card-bg: #fff;
+    --nav-bg: #2c3e50;
+    --hero-bg: #3a86ff;
+    --footer-bg: #2c3e50;
+    --transition: all 0.3s ease;
+}
+
+body {
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+    transition: var(--transition);
+}
+
+body.dark-mode {
+    --background: #121212;
+    --text: #f5f5f5;
+    --card-bg: #1e1e1e;
+    --nav-bg: #1a252f;
+    --hero-bg: #2980b9;
+    --footer-bg: #1a252f;
+}
+
+header {
+    background: var(--nav-bg);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 5px;
+    transition: var(--transition);
+}
+
+.nav-links a:hover {
+    background: var(--primary);
+}
+
+.hero {
+    background: var(--hero-bg);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background: white;
+    color: var(--hero-bg);
+    transition: var(--transition);
+}
+
+button:hover {
+    background: var(--secondary);
+    color: white;
+}
+
+.examples {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.example-card {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    transition: var(--transition);
+}
+
+.example-card:hover {
+    transform: translateY(-5px);
+}
+
+.example-card h2 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.demo-area {
+    border: 1px dashed #ccc;
+    padding: 1rem;
+    margin: 1rem 0;
+    min-height: 60px;
+    background: #fafafa;
+}
+
+footer {
+    background: var(--footer-bg);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+}
